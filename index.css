@@ -1,367 +1,341 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   }
+   body{
+   height: 100%;
+   width: 100%;
+  
+    font-size: 16px;
+   }
+   header {
+    width: 100%;
+    position:fixed;
+    z-index: 99;
 
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
+}
+   a{
+    text-decoration: none;
+   }
+   a:hover{
+    text-decoration: none;
+   }
+   @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  font-family: "Titillium Web", sans-serif;
 }
 body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
+  height: 2000px;
 }
-.container{
-    display: flex;
+ul.navbar-nav li a.nav-link {
+    color: rgb(20, 77, 201)!important;
+}
+ul.navbar-nav li a.nav-link:hover{
+ color: #2d94fc !important;
+}
+ul.navbar-nav li.active a.nav-link {
+    color: #2d94fc !important;
+    transition: all.3s;
+}
+nav{
+    z-index:1;
 }
 
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+.navbar-brand {
+    color: rgb(20, 77, 201) !important;
+    font-size: 35px;
+    font-weight: bold;
 }
 
-.logo {
-     font-family: italiana, cursive;
-    color:darksalmon !important;
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+
+.banner{
+    position: relative;
+       width: 100%;
+       height: 550px;
+       background: url(img/16.jpg);
+       background-size: cover;
+       background-position: center;
+       padding: 180px 0px;
+       clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+   }
+  h2.title span{
+    
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+   }
+   .banner_desc h2.title {
+       color: #fff;
+       font-size: 35px;
+       font-family: 'Acme', sans-serif;
+       border-bottom: 1px solid rgba(107, 106, 106, 0.6);
+   
+   }
+   .banner_desc p {
       color: #fff;
-      font-weight: bold;
-      font-size: 42px;
-      letter-spacing: 2px;
-       text-shadow:0 0 20px darkred;
+       margin: 10px 0px;
+       font-family: 'PT Serif Caption', serif;
+       font-size:20px;
+       font-style: italic;
+       width: 100%;
+   }
+  
+   a.btn {
+       padding: 12px 30px;
+       background: #2d94fc;
+       color: #fff;
+       border-radius: 25px;
+       border: 1px solid transparent;
+       margin-right: 20px;
+       transition: all .4s;
+       box-shadow: 1px 2px 4px 0px #00000075;
+       
+   }
+   .btn-trans{ 
+    background: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+   }
+   .btn-color:hover {
+       background: transparent !important;
+       color: #fff;
+       border: 1px solid #fff !important;
+       transition: all .4s cubic-bezier(0.65, 0.05, 0.51, 0.67);
+   }
+   .btn-trans:hover{
+    background: #2d94fc !important;
+       color: #fff !important;
+       transition: all .4s cubic-bezier(0.65, 0.05, 0.51, 0.67);
+       border:1px solid transparent !important;
+   }
+  .caption h1{
+       padding-top: 25px;
+       text-align: center;
+       font-family: 'Courgette', cursive;
+       font-size: 45px;
+       font-weight: bolder;
+      
+       color: rgb(2, 25, 66);
+       text-shadow:  #2d94fc;
+      
+   }
+  .caption{
+      align-items: center;
+      text-align: center;
+  }
+   .caption h6{
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+   padding-top: 10px;
+    font-size: 30px;
+    color: rgb(9, 34, 77);
+    border-bottom: 2px solid rgba(32, 6, 82, 0.6);
+    padding-bottom: 10px;;
+   }
+.content{
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    background: url(https://i.imgur.com/GCJRhiA.png);
 }
-i {
-font-family: fontawesome !important;
-}
-nav {
+  
+   
+  .row1{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+  }
+  .col{
+      flex-basis:30%;
+      overflow: hidden;
+  }
+  .card{
+      width:350px;
+      height: 350px;
+      margin: auto;
+      perspective: 1000px;
+      cursor:pointer;
+  }
+  .inner-box{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align:center;
+      border-radius:10px;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+  }
+  .card-front, .card-back{
       position: absolute;
       width: 100%;
-      line-height: 60px;
-}
-.banner {
-      width: 100%;
-      height: 100vh;
-      background: url("img/food1.jpg");
-      background-size: cover;
-      background-color: luminosity;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius:10px;
+  }
+  .card-front{
      
+ background-size: cover;
+ background-position:  center;
+    }
+    .front-1{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://media1.tenor.com/images/6c0fc9ca10c27c1edf55cb1f1764d637/tenor.gif?itemid=7238445);
+    }
+    .front-2{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://data.whicdn.com/images/79526561/original.gif);
+    }
+    .front-3{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://i.pinimg.com/originals/ce/6b/f2/ce6bf24031d44c14c4b57a7ec677c28e.gif);
+    }
+    .card-front span{
+        display: inline-block;
+        width: 100px;
+        padding:14px 0;
+        margin-top: 160px;
+        border-radius: 40x;
+        background: #fff;
+        color: #333333;
+        font-size: 12px;
+        transition: transform 1s;
+
+    }
+    .card-back{
+        background: #05050c;
+        transform: rotateX(180deg);
+    }
+.card:hover .inner-box{
+    transform: rotateX(-180deg);
+
 }
-.banner1 {
-      width: 100%;
-      height: 100vh;
-      background: url("img/bg.jpg");
-      background-size: cover;
-      background-color: luminosity;
-     
+.card:hover span{
+    transform: translateY(140px);
+}
+.card-back p{
+display: inline-block;
+color: #fff;
+font-family: 'Niconne', cursive;
+font-size: 20px;
+padding-bottom: 10px;
+border-bottom:1px solid #fff;
+margin-top: 140px;
+text-align: center;
 }
 
-.banner2 {
->>>>>>> 7bb44f5bfd1a6a3d2228e72616c91e73db2f307a
-      width: 100%;
-      height: 100vh;
-      background: url("img/bg2.jpg");
-      background-size: cover;
-      background-color: luminosity;
-     
+.banner1{
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Universe-Wallpaper-HD-Free-Download.jpg);
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+margin: auto;
+background-size: cover;
+position: relative;
+border-radius:10px;
+z-index:2;
 }
-.banner-content { 
-        height: 10em;
-    position: relative; 
-     margin: 0;
-   color: burlywood;
-    font-family: 'kanit',cursive;
-    text-align: center;
+.banner1 span{
+    height: 100% ;
+    left: 0;
+    background: url(img/20.jpg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
-
-.banner-content span{
-    color: yellowgreen;
-    
+  transition: 1s;
 }
-form{
-    max-width: 350px;
-   
-    margin:auto;
-    background: rgba(0,0,0,0.3);
-    
-    color:#fff;
-   
+.banner1 span:nth-child(1){
+    z-index: 10;
+    width: 25%;
+    transition-delay:0s;
 }
-nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
+.banner1 span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+    transition-delay:0.3s;
+}
+.banner1 span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay:0.6s;
+}
+.banner1 span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay:0.8s;
+}
+.banner1:hover span{
+    transform: translateY(-100%) ;
+    transition: 0.5s;
+}
+.banner1:hover span:nth-child(1){
+  transition-delay: 0.3s;
+}
+.banner1:hover span:nth-child(2){
+    transition-delay: 0.2s;
+  }
+  .banner1:hover span:nth-child(3){
+    transition-delay: 0.1s;
+  }
+  .banner1:hover span:nth-child(4){
+    transition-delay: 0;
+  }
+  .content2 {
+      color:#000;
       text-align: center;
-      margin: 0;
-      
-      
-      transition: 1s;
-}
-
-nav.black ul {
-      background: #000;
-}
-
-nav ul li {
-      display: inline-block;
-      padding: 16px 40px;
-      font-weight: bold;
-      font-family: kanit;
-}
-
-nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-      color: cornsilk;
-      font-weight: bold;
-       text-shadow:0 0 20px darkred;
-}
-
-.menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #000;
-      text-align: right;
+      padding:320px 80px;
+      width:100%;
+      height:100%;
       box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none;
-}
+  }    
+  .content2 h2{
+    font-family: 'Press Start 2P', cursive;
+    color: rgba(14, 1, 4, 0.74);
+    font-size:40px;
+    font-weight: bolder;
 
- .about{
-    padding: 1% 10%;
-    text-align: center;
-    position: relative;
-    font-family: lobster;
-    letter-spacing: 2px;
-}
-
-
-.container1,.container1:before{
-    background: 50% 50%/ cover;
-}
-.container1::before{
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right:0;
-    top:0;
-    display: block;
-    background-image: url("img/food1.jpg");
-    background-size: cover;
-    transform-origin: center center 0;
-    
-    z-index: -1;
-    min-height: 100vh;
-}
-
-.btn a{
-    display: block;
-    width: 180px;
-    height: 35px;
-    border:2px solid darkslategray;
-    line-height: 30px;
-    font-size: 20px;
-    color: darkslategrey;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    
-}
-.about{
-    padding: 1% 10%;
-    text-align: center;
-    position: relative;
-    font-family: lobster;
-    letter-spacing: 2px;
-}
-.box ul{
-    list-style: none;
-}
-.box a{
-    text-decoration: none;
-}
-.container4{
-    height: 550px;
-    width: 100%;
-    background-color:blanchedalmond;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box{
-    width: 400px;
-    height:500px;
-    background-color: darksalmon;
-    border-radius: 10px;
-    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    
-}
-.model{
-    height: 350px;
-    max-height: 100%;
-    max-width: 100%;
-}
- .box h1{
-   padding-bottom: 20px;
-   color:gainsboro;
-   font-family: italiana, cursive;
+  }
+   /*Media QUERIES*/
    
-    text-shadow:0 0 20px darkred; 
-}
-.box:hover{
-	background-color: darkred;
-	transform-style: preserve-3d;
-	transform: scale(1.02);
-	transition: all ease 0.3s;
-}
-.box:hover .italian{
-	color:#c0292b;
-	transition: all ease 0.5s;
-}
-footer{
-    
-    margin-top:50px;
-    clear:both;
-}
-
-.container2,.container2:before{
-    background: 50% 50%/ cover;
-}
-.container2::before{
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right:0;
-    top:0;
-    display: block;
-    background-image: url("img/bg.jpg");
-    background-size: cover;
-    transform-origin: center center 0;
-    
-    z-index: -1;
-    min-height: 100vh;
-}
-.wrap{
-    max-width: 350px;
-    border-radius: 20px;
-    margin:auto;
-    background: rgba(0,0,0,0.3);
-    padding: 40px;
-    color:#fff;
-    margin-top:100px;
-}
-.container2,.container3 h2{
-    text-align: center;
-}
-input[type=text],input[type=password], input[type=email]{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 5px;
-    background: rgba(0,0,0,0.8);
-    outline: none;
-    border:none;
-    border-bottom: 1 px dotted #fff;
-    color:#fff;
-    border-radius: 5px;
-    margin:5px;
-    font-weight: bold;
-    cursor: pointer;
-    
-}
-input[type=submit]{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 0;
-    margin-top:30px;
-    outline: none;
-    border: none;
-    background: #60adde;
-    opacity: 0.6;
-    border-radius:20px;
-    font-size: 20px;
-    color:#fff;
-    
-}
-input[type=submit]:hover{
-    background: darksalmon;
-    opacity: 0.8;
-}
-
-.container3,.container3:before{
-    background: 50% 50%/ cover;
-}
-.container3::before{
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right:0;
-    top:0;
-    display: block;
-    background-image: url("img/bg2.jpg");
-    background-size: cover;
-    transform-origin: center center 0;
-    
-    z-index: -1;
-    min-height: 100vh;
-}
-@media(max-width: 786px) {
-
-      .logo {
-            position: absolute;
-            top: 0;
-            margin-top: 16px;
-      }
-
-      nav ul {
-            max-height: 0px;
-            background: #000;
-      }
-
-      nav.black ul {
-            background: #000;
-      }
-
-      .showing {
-            max-height: 34em;
-      }
-
-      nav ul li {
-            box-sizing: border-box;
-            width: 100%;
-            background: #000;
-            padding: 24px;
-            text-align: center;
-      }
-
-      .menu-icon {
-            display: inline-block;
-      }
-      form{
-          max-width: 400px;
-      }
-
-}
+   @media(max-width:991px){
+   
+    h1.title {
+        font-size: 30px !important;
+        letter-spacing: 2px;
+    }
+    a.btn {
+        margin-right: 10px;
+        padding: 6px 20px;
+    }
+    .bg-light {
+         background-color: transparent !important;
+    }
+   
+    .banner{
+     padding: 150px 0px;
+     background-position: top center;
+     background: url("https://media1.tenor.com/images/1b43f028e0babdb8096a666dc49a7736/tenor.gif?itemid=16278331");
+     background-size: cover;
+    }
+    .banner-desc {
+        padding: 78px 0px;
+    }
